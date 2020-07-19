@@ -6,7 +6,7 @@ View the project live: [Single Div Blue Crayon](https://codepen.io/tannerdolby/p
 
 ## Built With
 * HTML
-* CSS + preprocessor SCSS
+* CSS + Preprocessor SCSS
 
 ## Author
 * Tanner Dolby - initial work - [@tannercd](https://github.com/tannercd)
