@@ -1,0 +1,96 @@
+body {
+  height: 100vh;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background: #e7a61a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+body .container {
+  display: flex;
+  /* Creating the triangle with psuedo element :before */
+}
+body .container .rectangle {
+  width: 350px;
+  height: 56px;
+  border-radius: 0.2rem;
+  background: #154360;
+  background-image: radial-gradient(ellipse at top, #000 78px, transparent 83px), linear-gradient(to right, transparent 40px, #000 40px, #000 47px, transparent 47px, transparent 54px, #000 54px, #000 61px, transparent 61px, transparent 283px, #000 285px, #000 292px, transparent 292px, transparent 300px, #000 300px, #000 307px, transparent 307px), linear-gradient(to right, transparent 18px, #2980B9 18px, #2980B9 328px, transparent 328px), linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.3) 100%);
+  box-shadow: 2px 2px 3px #333;
+}
+body .container .rectangle:before {
+  content: "";
+  position: relative;
+  top: 1.2rem;
+  right: 3.78rem;
+  border-top: 17px solid transparent;
+  border-right: 60.5px solid #154360;
+  border-bottom: 17px solid transparent;
+  border-left: 0;
+  width: 0;
+  height: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 8px, rgba(255, 255, 255, 0.2) 10px, rgba(255, 255, 255, 0) 16px);
+}
+body .container .rectangle:after {
+  content: "blue";
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0.48rem;
+  padding-right: 5rem;
+  right: 17.2%;
+  width: 94.62%;
+  font-size: 1.25rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 8px, rgba(255, 255, 255, 0.2) 10px, rgba(255, 255, 255, 0) 16px);
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    padding-left: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .rectangle {
+    margin-left: auto;
+    margin-right: auto;
+    height: 56px;
+    border-radius: 0.2rem;
+    background: #154360;
+    background-image: radial-gradient(ellipse at top, #000 78px, transparent 83px), linear-gradient(to right, transparent 40px, #000 40px, #000 47px, transparent 47px, transparent 54px, #000 54px, #000 61px, transparent 61px, transparent 283px, #000 285px, #000 292px, transparent 292px, transparent 300px, #000 300px, #000 307px, transparent 307px), linear-gradient(to right, transparent 18px, #2980B9 18px, #2980B9 328px, transparent 328px), linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.3) 100%);
+    box-shadow: 2px 2px 3px #333;
+  }
+
+  /* Creating the triangle with psuedo element :before */
+  .rectangle:before {
+    content: "";
+    position: relative;
+    top: 1.2rem;
+    right: 3.1rem !important;
+    border-top: 17px solid transparent;
+    border-right: 51px solid #154360 !important;
+    border-bottom: 15px solid transparent !important;
+    border-left: 0;
+    width: 0;
+    height: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 8px, rgba(255, 255, 255, 0.2) 10px, rgba(255, 255, 255, 0) 16px);
+  }
+
+  .rectangle:after {
+    content: "blue";
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.48rem;
+    padding-right: 5rem;
+    right: 14.4% !important;
+    width: 91.6% !important;
+    font-size: 1.25rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.2) 8px, rgba(255, 255, 255, 0.2) 10px, rgba(255, 255, 255, 0) 16px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
